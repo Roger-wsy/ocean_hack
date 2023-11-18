@@ -36,7 +36,7 @@ class _EhpToggleSwitchTitleState extends State<EhpToggleSwitchTitle> {
         children: [
           EhpText(
             widget.title,
-            maxLines: 2,
+            maxLines: 4,
             fontSize: 18,
             padding: EhpPadding.v8,
           ),

@@ -35,7 +35,7 @@ class _EhpActivityCardState extends State<EhpActivityCard> {
         children: [
           Container(
               margin: EhpPadding.a16,
-              height: MediaQuery.of(context).size.height * 0.2,
+              height: MediaQuery.of(context).size.height * 0.16,
               width: MediaQuery.of(context).size.width,
               decoration: BoxDecoration(
                 boxShadow: customShadow,
@@ -49,7 +49,10 @@ class _EhpActivityCardState extends State<EhpActivityCard> {
                     child: Hero(
                       tag: widget.tag,
                       child: ClipRRect(
-                        borderRadius: const BorderRadius.all(Radius.circular(15)),
+                        borderRadius: const BorderRadius.only(
+                          topLeft: Radius.circular(15),
+                          bottomLeft: Radius.circular(15),
+                        ),
                         child: Image.network(
                           widget.imageUrl ??
                               'https://ocean-hackathon.cheesysun.com/pictures/charmander.jpg',
@@ -83,9 +86,9 @@ class _EhpActivityCardState extends State<EhpActivityCard> {
                             ),
                             EhpText(
                               widget.description,
-                              maxLines: 4,
+                              maxLines: 3,
                               overflow: TextOverflow.visible,
-                              textStyle: EhpTextStyle.b3,
+                              textStyle: EhpTextStyle.b5,
                             )
                           ],
                         ),

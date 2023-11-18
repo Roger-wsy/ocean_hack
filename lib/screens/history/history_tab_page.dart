@@ -3,6 +3,7 @@ import 'package:ocean_hack/screens/history/favorite_page.dart';
 import 'package:ocean_hack/screens/history/history_page.dart';
 
 import '../../components/_index.dart';
+import 'incoming_page.dart';
 
 class HistoryTabPage extends StatefulWidget {
   const HistoryTabPage({super.key, this.tabIndex = 0});
@@ -21,7 +22,7 @@ class _HistoryTabPageState extends State<HistoryTabPage>
   void initState() {
     super.initState();
     _tabController = TabController(
-      length: 2,
+      length: 3,
       vsync: this,
       initialIndex: widget.tabIndex,
     );
@@ -40,7 +41,7 @@ class _HistoryTabPageState extends State<HistoryTabPage>
         headerSliverBuilder: (BuildContext context, bool innerBoxIsScrolled) =>
             [
           EhpSliverAppBar(
-            appBarTitle: 'History',
+            appBarTitle: 'Travel Log',
             showBackButton: false,
             pinAppBar: true,
             floatAppBar: true,
@@ -51,6 +52,10 @@ class _HistoryTabPageState extends State<HistoryTabPage>
               tabs: [
                 EhpText(
                   "History",
+                  textAlign: TextAlign.center,
+                ),
+                EhpText(
+                  "Incoming",
                   textAlign: TextAlign.center,
                 ),
                 EhpText(
@@ -65,6 +70,7 @@ class _HistoryTabPageState extends State<HistoryTabPage>
           controller: _tabController,
           children: const [
             HistoryPage(),
+            IncomingPage(),
             FavoritePage(),
           ],
         ),

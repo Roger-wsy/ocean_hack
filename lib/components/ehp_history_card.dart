@@ -45,11 +45,17 @@ class _EhpHistoryCardState extends State<EhpHistoryCard> {
                 Expanded(
                   flex: 6,
                   child: ClipRRect(
-                    borderRadius: const BorderRadius.all(Radius.circular(15)),
-                    child: Image.network(
-                      widget.imageUrl ??
-                          'https://ocean-hackathon.cheesysun.com/pictures/charmander.jpg',
-                      fit: BoxFit.cover,
+                    borderRadius: const BorderRadius.only(
+                      topLeft: Radius.circular(15),
+                      bottomLeft: Radius.circular(15),
+                    ),
+                    child: Container(
+                      height: 200,
+                      child: Image.network(
+                        widget.imageUrl ??
+                            'https://ocean-hackathon.cheesysun.com/pictures/charmander.jpg',
+                        fit: BoxFit.cover,
+                      ),
                     ),
                   ),
                 ),

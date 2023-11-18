@@ -28,7 +28,7 @@ class _HistoryPageState extends State<HistoryPage> {
                   description:
                       'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.',
                   imageUrl:
-                      'https://ocean-hackathon.cheesysun.com/pictures/charmander.jpg',
+                      'https://ocean-hackathon.cheesysun.com/pictures/sailboat.jpg',
                   onTap: () {
                     feedbackDialog(context);
                   },
@@ -39,8 +39,10 @@ class _HistoryPageState extends State<HistoryPage> {
                   description:
                       'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.',
                   imageUrl:
-                      'https://ocean-hackathon.cheesysun.com/pictures/charmander.jpg',
-                  onTap: () {},
+                      'https://ocean-hackathon.cheesysun.com/pictures/coconut.jpg',
+                  onTap: () {
+                    feedbackDialog(context);
+                  },
                 ),
               ],
             ),
@@ -58,18 +60,20 @@ feedbackDialog(BuildContext context) {
         return AlertDialog(
           content: StatefulBuilder(
             builder: (context, setState) {
-              bool _isHaveRecycleBinChanged = false;
-              bool isHaveRecycleBin = false;
-              bool _isHaveRuleAndRegulationChanged = false;
-              bool isHaveRuleAndRegulation = false;
+              bool _isEnergyEfficientChanged = false;
+              bool isEnergyEfficient = false;
+              bool _isRecycleMaterialChanged = false;
+              bool isRecycleMaterial = false;
+              bool _isEcoFriendlyChanged = false;
+              bool isEcoFriendly = false;
               return Column(
                 mainAxisSize: MainAxisSize.min,
                 children: [
                   EhpText(
                     'Feedback',
                     textAlign: TextAlign.center,
-                    textStyle:
-                        TextStyle(fontWeight: FontWeight.bold, fontSize: 24),
+                    textStyle: const TextStyle(
+                        fontWeight: FontWeight.bold, fontSize: 24),
                   ),
                   FormBuilder(
                       child: Column(
@@ -87,7 +91,7 @@ feedbackDialog(BuildContext context) {
                         allowHalfRating: true,
                         itemCount: 5,
                         itemPadding: EhpPadding.h8,
-                        itemBuilder: (context, _) => Icon(
+                        itemBuilder: (context, _) => const Icon(
                           Icons.star,
                           color: Colors.amber,
                         ),
@@ -99,12 +103,13 @@ feedbackDialog(BuildContext context) {
                         name: FeedbackConstant.haveRecycleBin,
                         builder: (field) {
                           return EhpToggleSwitchTitle(
-                            title: "Does the place have enough recycle bin?",
-                            initialPosition: isHaveRecycleBin,
+                            title:
+                                "Was the hotel/activity equipped with energy-efficient lighting and appliances?",
+                            initialPosition: isEnergyEfficient,
                             values: const ["Yes", "No"],
                             onToggleCallback: (value) {
-                              _isHaveRecycleBinChanged = true;
-                              isHaveRecycleBin = !isHaveRecycleBin;
+                              _isEnergyEfficientChanged = true;
+                              isEnergyEfficient = !isEnergyEfficient;
                             },
                           );
                         },
@@ -114,13 +119,27 @@ feedbackDialog(BuildContext context) {
                         builder: (field) {
                           return EhpToggleSwitchTitle(
                             title:
-                                "Does the place have good rules and regulations",
-                            initialPosition: isHaveRuleAndRegulation,
+                                "Did the hotel/activity provide recycling bins for guests to dispose of recyclable materials? ",
+                            initialPosition: isRecycleMaterial,
                             values: const ["Yes", "No"],
                             onToggleCallback: (value) {
-                              _isHaveRuleAndRegulationChanged = true;
-                              isHaveRuleAndRegulation =
-                                  !isHaveRuleAndRegulation;
+                              _isRecycleMaterialChanged = true;
+                              isRecycleMaterial = !isRecycleMaterial;
+                            },
+                          );
+                        },
+                      ),
+                      FormBuilderField(
+                        name: FeedbackConstant.haveRuleAndRegulation,
+                        builder: (field) {
+                          return EhpToggleSwitchTitle(
+                            title:
+                                "Were eco-friendly toiletries, such as biodegradable soaps and shampoos, provided?",
+                            initialPosition: isEcoFriendly,
+                            values: const ["Yes", "No"],
+                            onToggleCallback: (value) {
+                              _isEcoFriendlyChanged = true;
+                              isEcoFriendly = !isEcoFriendly;
                             },
                           );
                         },
@@ -131,6 +150,13 @@ feedbackDialog(BuildContext context) {
                         placeHolder: 'Overall Feedback',
                         onChanged: (_) {},
                       ),
+                      EhpSizedBox.h24,
+                      EhpDuoButton(
+                        primaryText: 'Share',
+                        secondaryText: 'Submit',
+                        primaryCallback: () {},
+                        secondaryCallback: () {},
+                      )
                     ],
                   )),
                 ],

@@ -1,9 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:google_nav_bar/google_nav_bar.dart';
 import 'package:ocean_hack/constant/constant.dart';
+import 'package:ocean_hack/screens/education/education_selection.dart';
 import 'package:ocean_hack/screens/history/history_tab_page.dart';
 import 'package:ocean_hack/screens/main_page/main_page.dart';
 import 'package:ocean_hack/screens/setting_page.dart';
+import 'package:ocean_hack/screens/wallet/wallet.dart';
 
 class BottomNavigationArgs {
   BottomNavigationArgs({
@@ -38,7 +40,8 @@ class _BottomNavigationState extends State<BottomNavigation> {
   static const List<Widget> _widgetOptions = <Widget>[
     MainPage(),
     HistoryTabPage(),
-    MainPage(),
+    WalletPage(),
+    EducationSelectionPage(),
     SettingsPage(),
   ];
 
@@ -94,7 +97,18 @@ class _BottomNavigationState extends State<BottomNavigation> {
             GButton(
               padding: EdgeInsets.all(15),
               icon: Icons.history,
-              text: 'History',
+              text: 'Log',
+              gap: 8,
+              backgroundColor: ehpPrimaryColor,
+              iconColor: Colors.black,
+              textColor: Colors.white,
+              iconActiveColor: Colors.white,
+            ),
+            GButton(
+              padding: EdgeInsets.all(15),
+              icon: Icons.wallet,
+              text: 'Wallet',
+              gap: 8,
               backgroundColor: ehpPrimaryColor,
               iconColor: Colors.black,
               textColor: Colors.white,
@@ -103,7 +117,8 @@ class _BottomNavigationState extends State<BottomNavigation> {
             GButton(
               padding: EdgeInsets.all(15),
               icon: Icons.book,
-              text: 'Education',
+              text: 'Learn',
+              gap: 8,
               backgroundColor: ehpPrimaryColor,
               iconColor: Colors.black,
               textColor: Colors.white,
@@ -113,6 +128,7 @@ class _BottomNavigationState extends State<BottomNavigation> {
               padding: EdgeInsets.all(15),
               icon: Icons.settings,
               text: 'Settings',
+              gap: 8,
               backgroundColor: ehpPrimaryColor,
               iconColor: Colors.black,
               textColor: Colors.white,

@@ -165,3 +165,16 @@ List<BoxShadow> customShadow = [
       offset: const Offset(7, 7),
       blurRadius: 20)
 ];
+
+List<BoxShadow> customShadow2 = [
+  BoxShadow(
+      color: Colors.black.withOpacity(0.5),
+      spreadRadius: -2,
+      offset: const Offset(-2, -2),
+      blurRadius: 30),
+  BoxShadow(
+      color: Colors.blue[900]!.withOpacity(.2),
+      spreadRadius: 2,
+      offset: const Offset(7, 7),
+      blurRadius: 20)
+];

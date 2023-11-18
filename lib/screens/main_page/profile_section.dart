@@ -31,11 +31,32 @@ class ProfileSection extends StatelessWidget {
             Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                EhpText(
-                  '👋 Hello! John',
-                  textStyle: EhpTextStyle.h2.copyWith(
-                    color: Colors.white,
-                  ),
+                Row(
+                  children: [
+                    EhpText(
+                      '👋 Hello! John',
+                      textStyle: EhpTextStyle.h2.copyWith(
+                        color: Colors.white,
+                      ),
+                    ),
+                    EhpSizedBox.w16,
+                    Container(
+                      padding: EhpPadding.a4,
+                      decoration: BoxDecoration(
+                          borderRadius:
+                              const BorderRadius.all(Radius.circular(15)),
+                          border: Border.all(color: Colors.white),
+                          color: Colors.white),
+                      child: EhpText(
+                        'Beginner',
+                        fontSize: 12,
+                        textAlign: TextAlign.center,
+                        padding: EhpPadding.h4,
+                        fontWeight: FontWeight.bold,
+                        color: ehpPrimaryColor,
+                      ),
+                    ),
+                  ],
                 ),
                 EhpSizedBox.h4,
                 EhpText(
