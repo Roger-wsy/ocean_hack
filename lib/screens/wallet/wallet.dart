@@ -17,10 +17,12 @@ class _WalletPageState extends State<WalletPage> {
   @override
   Widget build(BuildContext context) {
     Map<String, dynamic> educationList = {
-      'Pulau': 'https://ocean-hackathon.cheesysun.com/pictures/charmander.jpg',
-      'Pulau2': 'https://ocean-hackathon.cheesysun.com/pictures/charmander.jpg',
-      'Pulau3': 'https://ocean-hackathon.cheesysun.com/pictures/charmander.jpg',
-      'Pulau4': 'https://ocean-hackathon.cheesysun.com/pictures/charmander.jpg',
+      'Claim \$150 Gift Price!':
+          'https://ocean-hackathon.cheesysun.com/pictures/v3.jpg',
+      'Participate to win 120 euro!':
+          'https://ocean-hackathon.cheesysun.com/pictures/v2.jpg',
+      'Claim voucher to receive the gift of a getaway!':
+          'https://ocean-hackathon.cheesysun.com/pictures/v1.jpg',
     };
     return Scaffold(
       body: CustomScrollView(
@@ -38,20 +40,79 @@ class _WalletPageState extends State<WalletPage> {
                 repeat: true, // Whether to loop the animation
                 animate: true, // Whether to play the animation
               ),
-              EhpText(
-                '1034 points',
-                textStyle: EhpTextStyle.h1,
-                textAlign: TextAlign.center,
+              Row(
+                crossAxisAlignment: CrossAxisAlignment.center,
+                mainAxisAlignment: MainAxisAlignment.spaceAround,
+                children: [
+                  Container(
+                    padding: EhpPadding.a8,
+                    height: 120,
+                    width: MediaQuery.of(context).size.width * 0.4,
+                    decoration: BoxDecoration(
+                      borderRadius: const BorderRadius.all(
+                        Radius.circular(30),
+                      ),
+                      color: ehpLightPrimaryColor5,
+                      boxShadow: customShadow,
+                    ),
+                    child: Center(
+                      child: EhpText(
+                        '1034 points',
+                        fontSize: 24,
+                        fontWeight: FontWeight.bold,
+                        color: Colors.white,
+                        textAlign: TextAlign.center,
+                      ),
+                    ),
+                  ),
+                  Container(
+                    padding: EhpPadding.a16,
+                    height: 120,
+                    width: MediaQuery.of(context).size.width * 0.4,
+                    decoration: BoxDecoration(
+                      borderRadius: const BorderRadius.all(Radius.circular(30)),
+                      color: ehpLightPrimaryColor5,
+                      boxShadow: customShadow,
+                    ),
+                    child: Column(
+                      children: [
+                        EhpText(
+                          'RM 20.00',
+                          fontSize: 24,
+                          padding: EhpPadding.v4,
+                          fontWeight: FontWeight.bold,
+                          textAlign: TextAlign.center,
+                          color: Colors.white,
+                        ),
+                        Container(
+                          padding: EhpPadding.a8,
+                          decoration: const BoxDecoration(
+                              color: Colors.white,
+                              borderRadius:
+                                  BorderRadius.all(Radius.circular(30))),
+                          child: EhpText(
+                            '+ Top Up',
+                            fontSize: 24,
+                            fontWeight: FontWeight.bold,
+                            color: ehpLightPrimaryColor5,
+                            textAlign: TextAlign.center,
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                ],
               ),
-              EhpSizedBox.h16,
+              EhpSizedBox.h28,
               Container(
-                width: 300,
+                width: MediaQuery.of(context).size.width * 0.9,
                 height: 80,
-                decoration: const BoxDecoration(
+                decoration: BoxDecoration(
                   color: ehpLightPrimaryColor5,
-                  borderRadius: BorderRadius.all(
+                  borderRadius: const BorderRadius.all(
                     Radius.circular(30),
                   ),
+                  boxShadow: customShadow,
                 ),
                 child: Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,

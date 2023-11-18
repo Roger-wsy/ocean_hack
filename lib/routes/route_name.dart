@@ -10,4 +10,5 @@ class RouteName {
   static const bookingConfirmation = '/bookingConfirmation';
   static const success = '/success';
   static const pdfViewer = '/pdfViewer';
+  static const worldMap = '/worldMap';
 }

@@ -70,13 +70,17 @@ class EhpRouter {
         return MaterialPageRoute(
           builder: (_) => const SuceessCheckoutPage(),
         );
-        case RouteName.pdfViewer:
+      case RouteName.pdfViewer:
         PdfViewerArgs args = settings.arguments as PdfViewerArgs;
         return MaterialPageRoute(
-          builder: (_) =>  PdfViewerPage(
+          builder: (_) => PdfViewerPage(
             args: args,
           ),
         );
+      // case RouteName.worldMap:
+      //   return MaterialPageRoute(
+      //     builder: (_) => WorldMapPage(),
+      //   );
       // case RouteName.educationalModulePage:
       //   EducationalModulePageArgs args =
       //       settings.arguments as EducationalModulePageArgs;

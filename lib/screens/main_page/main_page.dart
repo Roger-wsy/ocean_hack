@@ -19,20 +19,21 @@ class MainPage extends StatefulWidget {
   State<MainPage> createState() => _MainPageState();
 }
 
-final Map<String, dynamic> ruleList = {
-  'Rule 1': {
-    'imageUrl': 'https://ocean-hackathon.cheesysun.com/pictures/beach_indo.jpg'
-  },
-  'Rule 2': {
+Map<String, dynamic> ruleList = {
+  'Look, Dont Touch!': {
     'imageUrl':
-        'https://ocean-hackathon.cheesysun.com/pictures/beach_trees_topview.jpg'
+        'https://ocean-hackathon.cheesysun.com/pictures/underwater_fish.jpg',
   },
-  'Rule 3': {
-    'imageUrl': 'https://ocean-hackathon.cheesysun.com/pictures/beach.jpg'
+  'Self-Grazing, NO Hand-Feeding!': {
+    'imageUrl':
+        'https://ocean-hackathon.cheesysun.com/pictures/turtle_playing_corals.jpg',
   },
-  'Rule 4': {
-    'imageUrl': 'https://ocean-hackathon.cheesysun.com/pictures/caves.jpg'
+  'Like SunScreen, but BETTER!': {
+    'imageUrl': 'https://ocean-hackathon.cheesysun.com/pictures/dock_waves.jpg',
   },
+  'Shocking Ocean Poluution Statistics': {
+    'imageUrl': 'https://ocean-hackathon.cheesysun.com/pictures/dolphins.jpg',
+  }
 };
 
 final List<Widget> imageSliders = ruleList.entries
@@ -200,7 +201,7 @@ class _MainPageState extends State<MainPage> {
                     child: Column(
                       children: [
                         EhpHorizontalSection(
-                          sectionTitle: 'Rule and Regulations',
+                          sectionTitle: 'Guidelines',
                           sectionSubtitle: "Learn before we visit",
                           child: SizedBox(
                             height: 150,

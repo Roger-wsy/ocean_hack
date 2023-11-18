@@ -1,0 +1,72 @@
+[
+  {
+    "No Station": "CM01K",
+    "State": "Kedah",
+    "Location": "Pulau Langakawi",
+    "Longitude": "99.79086",
+    "Latitude": "6.294944"
+  },
+  {
+    "No Station": "CM02M",
+    "State": "Melaka",
+    "Location": "Pulau Undan, Melaka",
+    "Longitude": "102.334742",
+    "Latitude": "2.047799"
+  },
+  {
+    "No Station": "CM03N",
+    "State": "Negeri Sembilan",
+    "Location": "Port Dickson, Negeri Sembilan",
+    "Longitude": "101.788525",
+    "Latitude": "2.513106"
+  },
+  {
+    "No Station": "CM04J",
+    "State": "Johor",
+    "Location": "Tanjung Piai, Johor",
+    "Longitude": "103.509578",
+    "Latitude": "1.260289"
+  },
+  {
+    "No Station": "CM05J",
+    "State": "Johor",
+    "Location": "Tanjung Pengelih, Johor",
+    "Longitude": "104.08765",
+    "Latitude": "1.369875"
+  },
+  {
+    "No Station": "CM10S",
+    "State": "W.P Labuan",
+    "Location": "W.P. Labuan",
+    "Longitude": "115.240514",
+    "Latitude": "5.276614"
+  },
+  {
+    "No Station": "CM11Q",
+    "State": "Sarawak",
+    "Location": "Santubong, Sarawak",
+    "Longitude": "110.328208",
+    "Latitude": "1.716522"
+  },
+  {
+    "No Station": "CM12A",
+    "State": "Perak",
+    "Location": "Perak",
+    "Longitude": "100.536925",
+    "Latitude": "4.224834"
+  },
+  {
+    "No Station": "CM13T",
+    "State": "Terengganu",
+    "Location": "Pulau Kapas, Terengganu",
+    "Longitude": "103.261203",
+    "Latitude": "5.217085"
+  },
+  {
+    "No Station": "CM14S",
+    "State": "Sabah",
+    "Location": "Teluk Sepanggar, Sabah",
+    "Longitude": "116.116331",
+    "Latitude": "6.068786"
+  }
+]

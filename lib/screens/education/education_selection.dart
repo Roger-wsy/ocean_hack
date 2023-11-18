@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:ocean_hack/components/_index.dart';
+import 'package:ocean_hack/screens/education/map_view.dart';
 import 'package:ocean_hack/screens/education/pdf_viewer.dart';
 
 import '../../constant/constant.dart';
@@ -79,6 +80,35 @@ class _EducationSelectionPageState extends State<EducationSelectionPage> {
               ),
             ),
           ),
+          // SliverToBoxAdapter(
+          //   child: Column(
+          //     children: [
+          //       EhpSizedBox.h16,
+          //       Center(
+          //         child: EhpText(
+          //           'National Marine Water Quality Monitoring',
+          //           textStyle: EhpTextStyle.h1,
+          //           textAlign: TextAlign.center,
+          //         ),
+          //       ),
+          //       GestureDetector(
+          //         onTap: () {
+          //           Navigator.pushNamed(context, RouteName.worldMap);
+          //         },
+          //         child: Container(
+          //           padding: EhpPadding.a16,
+          //           height: 150,
+          //           width: MediaQuery.of(context).size.width * 0.9,
+          //           decoration: const BoxDecoration(
+          //               borderRadius: BorderRadius.all(
+          //                 Radius.circular(15),
+          //               ),
+          //               color: Colors.green),
+          //         ),
+          //       )
+          //     ],
+          //   ),
+          //)
         ],
       ),
     );

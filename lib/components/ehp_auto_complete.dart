@@ -94,7 +94,7 @@ class _EhpAutoCompleteState extends State<EhpAutoComplete> {
                 onTapOutside: (event) {
                   _focusNode.unfocus();
                 },
-                autofocus: widget.autoFocus,
+                autofocus: false,
                 focusNode: _focusNode,
                 cursorColor: Colors.black,
                 cursorWidth: 1,

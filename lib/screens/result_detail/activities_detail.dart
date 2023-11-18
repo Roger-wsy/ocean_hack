@@ -58,19 +58,80 @@ class _ActivitiesDetailPageState extends State<ActivitiesDetailPage> {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  EhpText(
-                    widget.args?.titleName,
-                    textStyle: const TextStyle(
-                      fontWeight: FontWeight.bold,
-                      fontSize: 24,
-                    ),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          EhpText(
+                            widget.args?.titleName,
+                            padding: EhpPadding.v4,
+                            textStyle: const TextStyle(
+                              fontWeight: FontWeight.bold,
+                              fontSize: 24,
+                            ),
+                          ),
+                          EhpText(
+                            'RM300.00 / person',
+                            textStyle: const TextStyle(
+                              fontWeight: FontWeight.bold,
+                              fontSize: 20,
+                            ),
+                          ),
+                        ],
+                      ),
+                      EhpCircularButton(),
+                    ],
                   ),
-                  EhpText(
-                    'RM300.00 / person',
-                    textStyle: const TextStyle(
-                      fontWeight: FontWeight.bold,
-                      fontSize: 20,
-                    ),
+                  EhpSizedBox.h20,
+                  Row(
+                    children: [
+                      const CircleAvatar(
+                        backgroundImage: NetworkImage(
+                            'https://ocean-hackathon.cheesysun.com/pictures/charmander.jpg'),
+                        radius: 30,
+                      ),
+                      EhpSizedBox.w16,
+                      Expanded(
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Row(
+                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                              children: [
+                                Column(
+                                  children: [
+                                    EhpText(
+                                      'John Doe',
+                                      fontSize: 20,
+                                      fontWeight: FontWeight.bold,
+                                    ),
+                                    RatingBarIndicator(
+                                      rating: 4.75,
+                                      itemBuilder: (context, index) =>
+                                          const Icon(
+                                        Icons.star,
+                                        color: Colors.amber,
+                                      ),
+                                      itemCount: 5,
+                                      itemSize: 20.0,
+                                      direction: Axis.horizontal,
+                                    ),
+                                  ],
+                                ),
+                                EhpText(
+                                  '17 Nov 2023',
+                                  fontSize: 16,
+                                  fontWeight: FontWeight.normal,
+                                ),
+                              ],
+                            ),
+                          ],
+                        ),
+                      ),
+                    ],
                   ),
                   EhpText(
                     widget.args?.description,
