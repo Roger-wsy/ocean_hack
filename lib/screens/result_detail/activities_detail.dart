@@ -40,7 +40,7 @@ class _ActivitiesDetailPageState extends State<ActivitiesDetailPage> {
           ),
           SliverToBoxAdapter(
             child: Hero(
-              tag: 'pulau_redang',
+              tag: widget.args!.tag.toString(),
               child: SizedBox(
                 height: MediaQuery.of(context).size.height * 0.3,
                 width: MediaQuery.of(context).size.width,
@@ -82,7 +82,9 @@ class _ActivitiesDetailPageState extends State<ActivitiesDetailPage> {
                           ),
                         ],
                       ),
-                      EhpCircularButton(),
+                      EhpCircularButton(
+                        onPressed: (_) {},
+                      ),
                     ],
                   ),
                   EhpSizedBox.h20,

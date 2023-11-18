@@ -58,7 +58,7 @@ class EhpProfileAvartarTile extends StatelessWidget {
                   borderRadius: const BorderRadius.all(Radius.circular(15)),
                   border: Border.all(color: Colors.green)),
               child: EhpText(
-                'Beginner',
+                'Baby shark',
                 fontSize: 12,
                 textAlign: TextAlign.center,
                 padding: EhpPadding.h4,
@@ -107,7 +107,7 @@ levelDialog(BuildContext context) {
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
                             EhpText(
-                              'Beginner',
+                              'Baby shark',
                               textStyle: EhpTextStyle.h1,
                             ),
                             EhpText(
@@ -137,7 +137,7 @@ levelDialog(BuildContext context) {
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
                             EhpText(
-                              'Intermediate',
+                              'Bobtail squid',
                               textStyle: EhpTextStyle.h1,
                             ),
                             EhpText(
@@ -165,7 +165,7 @@ levelDialog(BuildContext context) {
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
                             EhpText(
-                              'Advanced',
+                              'Narwhal',
                               textStyle: EhpTextStyle.h1,
                             ),
                             EhpText(

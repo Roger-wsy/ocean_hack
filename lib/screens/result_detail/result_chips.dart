@@ -36,7 +36,7 @@ Map<String, dynamic> activities = {
     "description":
         "Dive into a world of wonder with snorkeling—an exhilarating aquatic adventure that transforms you into an explorer of the underwater realm. With just a mask, fins, and a snorkel, you'll glide effortlessly on the water's surface, peering into a vibrant and teeming universe below. Immerse yourself in the kaleidoscope of colors as schools of fish dance around coral gardens, and curious sea creatures dart in and out of hidden nooks. Snorkeling is not just a water activity; it's a passport to an enchanting, otherworldly experience, where every breath brings you closer to the magic beneath the waves. Whether you're a novice or a seasoned snorkeler, each dive promises a front-row seat to the breathtaking beauty of the ocean's secrets.\n\nAvoid touching or standing on coral reefs, as it can cause harm to the delicate marine ecosystem.",
     "imageUrl":
-        "https://images.unsplash.com/photo-1539498508910-091b5e859b1d?q=80&w=3826&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        "https://images.unsplash.com/photo-1524070600608-41d598325be8?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NTV8fHNub3JrZWxpbmd8ZW58MHx8MHx8fDA%3D"
   },
   "Diving": {
     "ratings": 5,
@@ -79,17 +79,18 @@ Map<String, dynamic> hotels = {
 };
 
 Map<String, dynamic> transports = {
-  "Boat Services": {
+  "Langkawi Ferry Services Sdn. Bhd.": {
     "ratings": 5,
-    "description": "Hello",
+    "description":
+        "Langkawi Ferry Services Sdn. Bhd. or LFS was established on 20th Nov 1996. In 1997, the company has purchased 6 new high-speed passengers ferries as a start off to its business operation. Today, LFS has 12 ferries in total operating daily between Langkawi, Kuala Kedah, Kuala Perlis, Penang, Puala Payar Marine Park and Satun (Thailand). Its also service between Penang and Medan (Indonesia).",
     "imageUrl":
-        "https://images.unsplash.com/photo-1584660042073-f22ae92b1c05?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YXR2fGVufDB8fDB8fHww"
+        "https://images.unsplash.com/photo-1593351415075-3bac9f45c877?q=80&w=4142&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
   },
-  "ATV": {
+  "B&V Marine": {
     "ratings": 4,
-    "description": "Hello",
-    "imageUrl":
-        "https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8Y2FyfGVufDB8fDB8fHww"
+    "description":
+        "B&V Marine Langkawi was established with a mission to provide the best and the most affordable service to all the yachtsmen in Langkawi coming from around the world. More than 10 years of functionality undeniably proves our confidence and reliability. As of today, organization is growing and expanding.",
+    "imageUrl": "https://ocean-hackathon.cheesysun.com/pictures/boat 2.jpg"
   },
 };
 

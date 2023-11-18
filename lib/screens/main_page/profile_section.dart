@@ -48,7 +48,7 @@ class ProfileSection extends StatelessWidget {
                           border: Border.all(color: Colors.white),
                           color: Colors.white),
                       child: EhpText(
-                        'Beginner',
+                        'Baby shark',
                         fontSize: 12,
                         textAlign: TextAlign.center,
                         padding: EhpPadding.h4,
