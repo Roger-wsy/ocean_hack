@@ -40,72 +40,17 @@ class _WalletPageState extends State<WalletPage> {
                 repeat: true, // Whether to loop the animation
                 animate: true, // Whether to play the animation
               ),
-              Row(
-                crossAxisAlignment: CrossAxisAlignment.center,
-                mainAxisAlignment: MainAxisAlignment.spaceAround,
-                children: [
-                  Container(
-                    padding: EhpPadding.a8,
-                    height: 120,
-                    width: MediaQuery.of(context).size.width * 0.4,
-                    decoration: BoxDecoration(
-                      borderRadius: const BorderRadius.all(
-                        Radius.circular(30),
-                      ),
-                      color: ehpLightPrimaryColor5,
-                      boxShadow: customShadow,
-                    ),
-                    child: Center(
-                      child: EhpText(
-                        '1034 points',
-                        fontSize: 24,
-                        fontWeight: FontWeight.bold,
-                        color: Colors.white,
-                        textAlign: TextAlign.center,
-                      ),
-                    ),
-                  ),
-                  Container(
-                    padding: EhpPadding.a16,
-                    height: 120,
-                    width: MediaQuery.of(context).size.width * 0.4,
-                    decoration: BoxDecoration(
-                      borderRadius: const BorderRadius.all(Radius.circular(30)),
-                      color: ehpLightPrimaryColor5,
-                      boxShadow: customShadow,
-                    ),
-                    child: Column(
-                      children: [
-                        EhpText(
-                          'RM 20.00',
-                          fontSize: 24,
-                          padding: EhpPadding.v4,
-                          fontWeight: FontWeight.bold,
-                          textAlign: TextAlign.center,
-                          color: Colors.white,
-                        ),
-                        Container(
-                          padding: EhpPadding.a8,
-                          decoration: const BoxDecoration(
-                              color: Colors.white,
-                              borderRadius:
-                                  BorderRadius.all(Radius.circular(30))),
-                          child: EhpText(
-                            '+ Top Up',
-                            fontSize: 24,
-                            fontWeight: FontWeight.bold,
-                            color: ehpLightPrimaryColor5,
-                            textAlign: TextAlign.center,
-                          ),
-                        ),
-                      ],
-                    ),
-                  ),
-                ],
+              EhpText(
+                '1034 points',
+                padding: const EdgeInsets.fromLTRB(0, 16, 0, 0),
+                fontSize: 24,
+                fontWeight: FontWeight.bold,
+                color: Colors.black,
+                textAlign: TextAlign.center,
               ),
               EhpSizedBox.h28,
               Container(
-                width: MediaQuery.of(context).size.width * 0.9,
+                width: MediaQuery.of(context).size.width * 0.7,
                 height: 80,
                 decoration: BoxDecoration(
                   color: ehpLightPrimaryColor5,

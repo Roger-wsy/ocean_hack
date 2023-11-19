@@ -1,12 +1,12 @@
 name: ocean_hack
 description: A new Flutter project.
 
-publish_to: 'none'
+publish_to: "none"
 
 version: 1.0.0+1
 
 environment:
-  sdk: '>=3.0.6 <4.0.0'
+  sdk: ">=3.0.6 <4.0.0"
 
 dependencies:
   flutter:
@@ -47,10 +47,16 @@ dependencies:
   smooth_page_indicator: ^1.1.0
   lottie: ^2.6.0
   syncfusion_flutter_pdfviewer: ^23.1.39
+  flutter_launcher_icons: ^0.13.1
 
-# flutter_native_splash:
-#   color: "#ffffff"
-#   image: "assets/EHPlogo.png"
+flutter_icons:
+  android: true
+  ios: true
+  image_path: "assets/logo.png"
+
+flutter_native_splash:
+  color: "#ffffff"
+  image: "assets/logo.png"
 
 dev_dependencies:
   flutter_test:
