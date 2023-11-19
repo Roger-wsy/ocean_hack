@@ -17,7 +17,7 @@ class _EducationSelectionPageState extends State<EducationSelectionPage> {
   @override
   Widget build(BuildContext context) {
     Map<String, dynamic> educationList = {
-      'Look, Dont Touch!': {
+      'Look, Don\'t Touch!': {
         'imageUrl':
             'https://ocean-hackathon.cheesysun.com/pictures/underwater_fish.jpg',
         'pdfLink': 'https://ocean-hackathon.cheesysun.com/assets/pdf/1.pdf',
@@ -27,12 +27,12 @@ class _EducationSelectionPageState extends State<EducationSelectionPage> {
             'https://ocean-hackathon.cheesysun.com/pictures/turtle_playing_corals.jpg',
         'pdfLink': 'https://ocean-hackathon.cheesysun.com/assets/pdf/2.pdf',
       },
-      'Like SunScreen, but BETTER!': {
+      'Like Sunscreen, but BETTER!': {
         'imageUrl':
             'https://ocean-hackathon.cheesysun.com/pictures/dock_waves.jpg',
         'pdfLink': 'https://ocean-hackathon.cheesysun.com/assets/pdf/3.pdf',
       },
-      'Shocking Ocean Poluution Statistics': {
+      'Shocking Ocean Pollution Statistics': {
         'imageUrl':
             'https://ocean-hackathon.cheesysun.com/pictures/dolphins.jpg',
         'pdfLink': 'https://ocean-hackathon.cheesysun.com/assets/pdf/4.pdf',

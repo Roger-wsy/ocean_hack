@@ -20,7 +20,7 @@ class MainPage extends StatefulWidget {
 }
 
 Map<String, dynamic> ruleList = {
-  'Look, Dont Touch!': {
+  'Look, Don\'t Touch!': {
     'imageUrl':
         'https://ocean-hackathon.cheesysun.com/pictures/underwater_fish.jpg',
   },
@@ -28,10 +28,10 @@ Map<String, dynamic> ruleList = {
     'imageUrl':
         'https://ocean-hackathon.cheesysun.com/pictures/turtle_playing_corals.jpg',
   },
-  'Like SunScreen, but BETTER!': {
+  'Like Sunscreen, but BETTER!': {
     'imageUrl': 'https://ocean-hackathon.cheesysun.com/pictures/dock_waves.jpg',
   },
-  'Shocking Ocean Poluution Statistics': {
+  'Shocking Ocean Pollution Statistics': {
     'imageUrl': 'https://ocean-hackathon.cheesysun.com/pictures/dolphins.jpg',
   }
 };
